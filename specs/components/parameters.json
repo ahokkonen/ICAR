@@ -1,0 +1,61 @@
+{
+  "location-scheme": {
+    "name": "location-scheme",
+    "in": "path",
+    "description": "The scheme id for the location identifier.",
+    "required": true,
+    "schema": {
+      "type": "string",
+      "enum": [
+        "nl.ubn",
+        "de.farmid",
+        "be.pen"
+      ]
+    }
+  },
+  "location-id": {
+    "name": "location-id",
+    "in": "path",
+    "description": "The unique identifier for the location.",
+    "required": true,
+    "schema": {
+      "type": "string"
+    }
+  },
+  "meta-modified-from": {
+    "name": "meta-modified-from",
+    "in": "query",
+    "description": "The start of the date-time range for the data to get in the request.",
+    "schema": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "meta-modified-to": {
+    "name": "meta-modified-to",
+    "in": "query",
+    "description": "The end of the date-time range for the data to get in the request.",
+    "schema": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "animal-scheme": {
+    "name": "animal-scheme",
+    "in": "query",
+    "description": "The scheme id for the animal identifier.",
+    "required": false,
+    "schema": {
+      "type": "string"
+    }
+  },
+  "animal-id": {
+    "name": "animal-id",
+    "in": "query",
+    "description": "The unique identifier for the animal.",
+    "required": false,
+    "schema": {
+      "type": "string"
+    }
+  }
+}
