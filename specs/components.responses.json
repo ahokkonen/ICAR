@@ -9,7 +9,7 @@
             "errors": {
               "type": "array",
               "items": {
-                "$ref": "../../specs/components/schemas.json#/error"
+                "$ref": "../specs/openapi.json#/components/schemas/error"
               }
             }
           },

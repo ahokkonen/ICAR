@@ -23,18 +23,18 @@
   ],
   "paths": {
     "/locations/{location-scheme}/{location-id}/drying-offs": {
-      "$ref": "../specs/paths/drying-offs.json"
+      "$ref": "../specs/paths.reproduction.drying-offs.json"
     }
   },
   "components": {
-    "parameters": {
-      "$ref": "../specs/components/parameters.json"
-    },
     "schemas": {
-      "$ref": "../specs/components/schemas.json"
+      "$ref": "../specs/components.schemas.json"
+    },
+    "parameters": {
+      "$ref": "../specs/components.parameters.json"
     },
     "responses": {
-      "$ref": "../specs/components/responses.json"
+      "$ref": "../specs/components.responses.json"
     }
   }
 }

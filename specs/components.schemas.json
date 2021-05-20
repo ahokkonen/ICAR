@@ -1,0 +1,8 @@
+{
+  "error": {
+    "$ref": "../resources/exampleErrorResource.json"
+  },
+  "icarMilkingDryOffEventCollection": {
+    "$ref": "../collections/icarMilkingDryOffEventCollection.json"
+  }
+}

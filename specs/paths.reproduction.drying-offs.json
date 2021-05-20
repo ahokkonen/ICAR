@@ -1,0 +1,39 @@
+{
+  "get": {
+    "operationId": "get-drying-offs",
+    "summary": "Get the drying off for a certain location",
+    "description": "# Purpose\nProvides the drying off on a location\n",
+    "tags": [
+      "ADE - Reproduction"
+    ],
+    "parameters": [
+      {
+        "$ref": "../specs/openapi.json#/components/parameters/location-scheme"
+      },
+      {
+        "$ref": "../specs/openapi.json#/components/parameters/location-id"
+      },
+      {
+        "$ref": "../specs/openapi.json#/components/parameters/meta-modified-from"
+      },
+      {
+        "$ref": "../specs/openapi.json#/components/parameters/meta-modified-to"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Successful. The response contains the drying off for the given location",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../specs/openapi.json#/components/schemas/icarMilkingDryOffEventCollection"
+            }
+          }
+        }
+      },
+      "default": {
+        "$ref": "../specs/openapi.json#/components/responses/default"
+      }
+    }
+  }
+}
